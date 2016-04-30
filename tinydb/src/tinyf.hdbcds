@@ -1,0 +1,13 @@
+namespace srivatsan_tinyworld.tinydb;
+context tinyf {
+
+  entity world {
+    key continent: String(100);
+      };
+
+entity Country{
+ name : String(100);
+Partof : Association[0..1] to world;
+};
+};
+ 
